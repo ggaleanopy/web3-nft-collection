@@ -182,7 +182,7 @@ import { Contract, providers, utils } from "ethers";
             </div>
           </div>
 
-          <footer className={styles.footer}>&copy;&nbsp;{new Date().getFullYear()}&nbsp;-&nbsp;Powered&nbsp;by&nbsp; <a href="https://gustavogaleano.com" target="_blank" className={styles.link}>Gustavo Galeano</a></footer>
+          <footer className={styles.footer}>&copy;&nbsp;{new Date().getFullYear()}&nbsp;-&nbsp;Powered&nbsp;by&nbsp; <a href="https://gustavogaleano.com" target="_blank" rel="noreferrer" className={styles.link}>Gustavo Galeano</a></footer>
         </div>
       );
     }
