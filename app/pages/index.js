@@ -168,7 +168,7 @@ import { Contract, providers, utils } from "ethers";
           </Head>
           <div className={styles.main}>
             <div>
-              <h1 className={styles.title}>Welcome to WorldCupBalls!</h1>
+              <h1 className={styles.title}>Welcome to World Cup Balls!</h1>
               <div className={styles.description}>
                 Introducing an NFT collection of all Word Cup Balls since 1930.
               </div>
