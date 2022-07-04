@@ -178,7 +178,7 @@ import { Contract, providers, utils } from "ethers";
               {renderButton()}
             </div>
             <div>
-              <img className={styles.image} src="../worldcup.png" />
+              <img className={styles.image} src="../wcb-logo.png" />
             </div>
           </div>
 
