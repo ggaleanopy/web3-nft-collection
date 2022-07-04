@@ -1,4 +1,4 @@
-import { Contract, providers, utils } from "ethers";
+    import { Contract, providers, utils } from "ethers";
     import Head from "next/head";
     import React, { useEffect, useRef, useState } from "react";
     import Web3Modal from "web3modal";
@@ -141,7 +141,7 @@ import { Contract, providers, utils } from "ethers";
         // If wallet is not connected, return a button which allows them to connect their wallet
         if (!walletConnected) {
           return (
-            <button onClick={connectWallet} className={styles.button}>
+            <button onClick={connectWallet} className={styles.button_circle}>
               Connect your wallet
             </button>
           );
@@ -149,7 +149,7 @@ import { Contract, providers, utils } from "ethers";
 
         // If we are currently waiting for something, return a loading button
         if (loading) {
-          return <button className={styles.button}>Loading...</button>;
+          return <button className={styles.button_circle}>Loading...</button>;
         }
 
         return (
