@@ -30,7 +30,7 @@
           const tx = await nftContract.mint({
             // value signifies the cost of one LW3Punks which is "0.01" eth.
             // We are parsing `0.01` string to ether using the utils library from ethers.js
-            value: utils.parseEther("0.01"),
+            value: utils.parseEther("0.001"),
           });
           setLoading(true);
           // wait for the transaction to get mined
@@ -95,11 +95,11 @@
         const provider = await web3ModalRef.current.connect();
         const web3Provider = new providers.Web3Provider(provider);
 
-        // If user is not connected to the Mumbai network, let them know and throw an error
+        // If user is not connected to the Görli network, let them know and throw an error
         const { chainId } = await web3Provider.getNetwork();
-        if (chainId !== 80001) {
-          window.alert("Change the network to Mumbai");
-          throw new Error("Change network to Mumbai");
+        if (chainId !== 5) {
+          window.alert("Change the network to Görli");
+          throw new Error("Change network to Görli");
         }
 
         if (needSigner) {
@@ -118,7 +118,7 @@
           // Assign the Web3Modal class to the reference object by setting it's `current` value
           // The `current` value is persisted throughout as long as this page is open
           web3ModalRef.current = new Web3Modal({
-            network: "mumbai",
+            network: "goerli",
             providerOptions: {},
             disableInjectedProvider: false,
           });
