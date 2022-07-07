@@ -162,7 +162,7 @@
       return (
         <div>
           <Head>
-            <title>World Cup Balls</title>
+            <title>World Cup Balls - NFT Collection</title>
             <meta name="description" content="WorldCupBalls-Dapp" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
